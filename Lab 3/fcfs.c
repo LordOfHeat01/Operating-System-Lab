@@ -52,3 +52,32 @@ void sort(struct Process p[], int n ){
         printf("\n Average Waiting Time : %.2f", avgwt);
         return 0;
  }
+ /*
+First Come First Serve (FCFS) Scheduling
+Sample Run & Output Guide
+
+Provide input in this format:
+PID  ArrivalTime  BurstTime
+
+Example Input:
+P1 0 5
+P2 1 3
+P3 2 8
+P4 3 6
+
+Expected Output (FCFS):
+
+PID  AT  BT  CT  TAT WT
+P1   0   5   5   5   0
+P2   1   3   8   7   4
+P3   2   8   16  14  6
+P4   3   6   22  19  13
+
+Where:
+CT  = Completion Time
+TAT = Turnaround Time (CT - AT)
+WT  = Waiting Time (TAT - BT)
+
+This verifies correct FCFS scheduling implementation.
+Run the program in this repository to reproduce results.
+*/

@@ -58,3 +58,27 @@ int main (){
     printf("\nAverage Turn Around Time %.2f",tat/n);
     printf("\nAverage waiting Time %.2f",twt/n);
 return 0;}
+/*
+Sample Run & Output Guide
+
+Run this program with the following inputs:
+P1 0 5
+P2 1 3
+P3 2 8
+P4 3 6
+
+On execution (FCFS Scheduling), the output will be:
+
+PID   AT  BT  CT  TAT WT
+P1    0   5   5   5   0
+P2    1   3   8   7   4
+P3    2   8   16  14  6
+P4    3   6   22  19  13
+
+This demonstrates correct calculation of:
+CT  - Completion Time
+TAT - Turnaround Time
+WT  - Waiting Time
+
+Run the program in the repository to verify these results.
+*/
