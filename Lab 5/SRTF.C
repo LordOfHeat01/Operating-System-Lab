@@ -82,3 +82,30 @@ int main (){
 
     return 0;
 }
+/*
+Sample Run & Output Guide
+
+Run this program with the following inputs:
+(Process  Arrival Time  Burst Time)
+
+P1 0 6
+P2 1 3
+P3 2 1
+
+On execution (SRTF Scheduling), the output will be:
+
+PID   AT  BT  CT  TAT WT
+P1    0   6   10  10  4
+P2    1   3   5   4   1
+P3    2   1   3   1   0
+
+This demonstrates correct calculation of:
+CT  - Completion Time
+TAT - Turnaround Time (CT - AT)
+WT  - Waiting Time (TAT - BT)
+
+SRTF always selects the process with the
+shortest remaining burst time at any moment.
+
+Run the program in the repository to verify these results.
+*/
